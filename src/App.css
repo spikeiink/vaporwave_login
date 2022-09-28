@@ -1,0 +1,137 @@
+
+
+
+body{
+ 
+  padding: 0;
+  margin: 0;
+  
+  
+  
+  
+  
+}
+
+.container1{
+  width: 180px;
+  height: 250px;
+  background-color: rgb(67, 1, 129);
+  border: inset 3px rgb(0, 255, 221);
+  padding: 50px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  left:50%;   
+  top:50%;    
+  margin: auto;
+  margin-left: -160px;    
+  margin-top: -251px;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 15%;
+  min-height: 12rem;
+  
+  
+}
+
+
+.efeito{
+  width: 100%;
+  height: 40px;  
+  padding: 305px 0;
+  
+  
+  
+  background-image: linear-gradient(to right, rgb(72, 0, 96), rgb(147, 6, 229), rgb(79, 11, 111));
+  background-size: 500% 100%;
+  
+  animation-name: degrade;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate
+}
+
+@keyframes degrade{
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 100%;
+    
+  }
+}
+
+img{
+ animation-name: animate;
+ animation-duration: 30s;
+ animation-direction: alternate-reverse;
+ animation-iteration-count: infinite;
+ position: relative;
+ animation-duration: calc(500s / var(--i));
+ max-height: 40px;
+ 
+ 
+ 
+ 
+
+
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(40vh) scale(1);
+  }
+  100%{
+    transform: translateY(-130vh) scale(0);
+    
+    
+  }
+}
+
+.op{
+  width: 40%;
+  
+  
+}
+.but{
+  color: rgb(0, 255, 221);
+  background-color: rgb(76, 2, 103);
+  border: transparent;
+  border-radius: 10%;
+  cursor: pointer;
+  
+}
+
+.senha{
+  background-color: blueviolet;
+  border-radius: 70vh;
+  border: transparent;
+  width: 180px;
+  height: 25px;
+  
+  
+}
+
+.senha::placeholder{
+  color: rgb(0, 255, 221);
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.senha:focus{
+  border-color: rgb(0, 255, 221);
+  outline-style: groove;
+  outline-color: rgb(0, 255, 221);
+}
+
+input{
+  color: rgb(0, 255, 221);
+}
+ 
+
+
+
+
+
